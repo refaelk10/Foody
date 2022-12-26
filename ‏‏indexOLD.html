@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+<title>My Foody site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Bahnschrift SemiLight, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #479;
+  padding: 30px;
+  text-align: center;
+  font-size: 55px;
+  color: white;
+  height: auto;
+}
+
+/* עיצוב של לינקים */
+/* a:visited{לשם לב שההובר נמצא מתחת  לביקור אחרת לא יופיע */
+a:visited{color:purple;}
+a:active{color:black;}
+a:hover{color:blue;}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #eda;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0; 
+  
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #s3s1s1;
+  height: auto;; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section {
+	  font-family: Cascadia Mono SemiBold; font-size: 25px ; color: green;
+}
+
+/* Style the footer */
+footer {
+  background-color: #277;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+a:link {
+  text-decoration: none; 
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Refael's Foody site</h2>
+</header>
+
+<section>
+  <nav>
+    <ul >
+      <li><a href="pickles.html">My Pickles</a></li>
+      <li><a href="plancha.html">On the plancha</a></li>
+      <li><a href="pickles.html">Hot from the stove</a></li>
+      <li><a href="On the Plate">On the plate</a></li>
+    </ul>
+  </nav>
+  <button class="button button4"><a href="plating.html";> On the Plate</a></button>
+  <article>
+    <h1>Introduction</h1>
+	<p>Hello, my name is Refael and I like to cook, make pickles and spreads <br/> As a small child I joined my mother mainly in making cakes, at a later stage I took it upon myself to prepare food, <br/> the experience I gained over the years.
+		I usually do not cook according to a recipe, these are used to fill in missing information,
+		<br/>On this site I will share with you my love for the kitchen
+	</p>
+  </article>
+</section>
+
+<footer>
+  <p> </p>
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,172 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>On the plate - My Foody site </title>
+<style>
+.bordering{
+	border: 3px solid black;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: bbd9b3; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #479;
+  color: white;
+}
+
+.button2 {
+  background-color: #bbd9b3; 
+  color: black; 
+  border: 3px solid Orange;
+  border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: rgb(152, 192, 106);
+  color: white;
+}
+
+.button3 {
+  background-color: bbd9b3; 
+  color: black; 
+  border: 3px solid #4CAF50;
+  border-radius: 12px;
+}
+
+.button3:hover {
+  background-color: #479;
+  color: white;
+}
+
+.button4 {
+  background-color: #bbd9b3 ;
+  color: white;
+  border: 3px solid #a3201c;
+  border-radius: 12px;
+}
+
+.button4:hover {
+	background-color: #1968ce;
+	color: white;
+	border-radius: 12px;
+
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+a:link {
+	text-decoration: none; 
+}
+a {
+  color: black;
+}
+a:hover {
+  color: white;
+}
+h1 {
+ color: #221; font-family: 'Helvetica Neue', align="center"; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; 
+}
+.mySlides {display:none;}
+
+ img {
+  max-width: 80%;
+  height: auto
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: orange;
+  padding: 10px;
+  
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+ 
+}
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</style>
+
+</head>
+<body>
+<h1>On the plate</h1> 
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section bordering" >
+  <img class="mySlides" src="images/20161219_201536.jpg" style="width:100%">
+  <img class="mySlides" src="images/20170921_140115.jpg" style="width:100%">
+  <img class="mySlides" src="images/20161219_201448.jpg" style="width:100%">
+</div><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div align= "center";; class="grid-container">
+  <div  class="grid-item"><img src = "images/20150909_200108.jpg" alt="Omlet Sandwich"><br>Omlet Sandwich<br><img src = "images/20220210_211122.jpg" alt="beef Sandwich"><br>beef Sandwich</div>
+  <div class="grid-item"><img src = "images/CannedEggs.jpg" alt="CannedEggs"><br>CannedEggs</div>
+  <div class="grid-item"><img src = "images/20210715_183411.jpg" alt="Watermelon"><br>Artistic cutting of Watermelon</div>  
+  <div class="grid-item"><img src = "images/20200710_Eggplant.jpg" alt="Eggplant"></div>
+  <div class="grid-item"><img src = "images/20200710_Eggplant.jpg" alt="Eggplant"></div>
+  <div class="grid-item">6<img src = "images/20200710_Eggplant.jpg" alt="Eggplant"></div>  
+  <div class="grid-item">7<img src = "images/20200710_Eggplant.jpg" alt="Eggplant"></div>
+  <div class="grid-item">8<img src = "images/20200710_Eggplant.jpg" alt="Eggplant"></div>
+  <div class="grid-item">9<img src = "images/20200710_Eggplant.jpg" alt="Eggplant"></div>  
+</div>
+	 
+	<button class="button button3"><a href="??index.html";> Home page</a></button>
+	<button class="button button2"><a href="pickles.html";> pickles</a></button>
+	<button class="button button4"><a href="plancha.html";>On the Plancha</a></button>
+	<button class="button button4"><a href="stove.html";>From the Stove</a></button>
+	<button class="button button5">Black</button>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E9E1EB;
+}
+#myDIV {
+  height:10%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: none;
+  padding: 10px;
+  align: center;
+
+}
+#myDIV div {
+  background-color: none;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-column: 1 /  3;
+}
+
+img {
+  border-radius: 9px;
+  padding: 6px;
+  
+
+  background-color: none
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 150px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+h1 { 
+color: #111; font-family: 'Helvetica Neue', align="center"; font-size: 45px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; 
+}
+
+</style>
+</head>
+<body>
+
+<h1 align="center";>EggPlant Pickling</h1>
+
+<div id="myDIV">
+  <div class="item1"><img src = "images/makeEggplant/20200710_085311.jpg" alt="Eggplant" width="80%" height="auto"></div>
+  <div class="item2"><img src = "images/makeEggplant/20200710_092816.jpg" alt="Eggplant" width="100%" height="auto"></div>
+  <div class="item2"><img src = "images/makeEggplant/20200710_085330.jpg" alt="Eggplant" width="70%" height="auto"></div>
+  <div class="item2"><img src = "images/makeEggplant/20200710_093806.jpg" alt="Eggplant" width="100%" height="auto"></div><br>
+  <div class="item2"><img src = "images/makeEggplant/20200710_095253.jpg" alt="Eggplant" width="85%" height="auto"></div>
+  <div class="item6"><img src = "images/makeEggplant/20200710_095935.jpg" alt="Eggplant" width="100%" height="auto"></div>
+</div>
+<div  align= "center">
+  <div class="item3"><img src = "images/makeEggplant/20200710_101736.jpg" alt="Eggplant" width="80%" height="auto"></div>
+</div>
+
+</body>
+</html>
